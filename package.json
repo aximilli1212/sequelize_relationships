@@ -1,0 +1,28 @@
+{
+  "name": "sequelize_relationships",
+  "version": "1.0.0",
+  "description": "Practicing complex relation mappings in sequelize",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aximilli1212/sequelize_relationships.git"
+  },
+  "keywords": [
+    "sequelize"
+  ],
+  "author": "aximilli1212",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aximilli1212/sequelize_relationships/issues"
+  },
+  "homepage": "https://github.com/aximilli1212/sequelize_relationships#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mysql2": "^2.0.1",
+    "sequelize": "^5.21.2"
+  }
+}
