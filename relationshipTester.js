@@ -90,4 +90,20 @@ WorkingDay.bulkCreate([
             })
             .catch((err) => console.log("Error while Users search : ", err))
     })
-    .catch((err) => console.log("Error while WorkingDay creation : ", err))
+    .catch((err) => console.log("Error while WorkingDay creation : ", err));
+
+
+
+// // Get workingDays for a given User
+User.findByPk(1, {include: ['days']})
+    .then((user) => {
+        console.log(user.get())
+    })
+    .catch((err) => console.log("Error while searching user : ", err))
+
+// Get Users for a given WorkingDay
+WorkingDay.findByPk(1,  {include: ['employes']})
+    .then((workingDay) => {
+        console.log(workingDay.get())
+    })
+    .catch((err) => console.log("Error while searching workingDay : ", err))
